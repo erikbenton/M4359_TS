@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/totalTimerReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/timer_readings_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalTimerLabel"
+        app:layout_constraintEnd_toEndOf="@+id/stepTimerReading"
+        app:layout_constraintStart_toStartOf="@+id/stepTimerReading"
+        app:layout_constraintTop_toTopOf="@+id/totalTimerLabel"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <EditText
+        android:id="@+id/delayTimerReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/timer_readings_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/delayTimerLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/delayTimerLabel"
+        app:layout_constraintTop_toTopOf="@+id/delayTimerLabel"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <EditText
+        android:id="@+id/remainingTimerReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/timer_readings_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/remainingTimerLabel"
+        app:layout_constraintEnd_toEndOf="@+id/delayTimerReading"
+        app:layout_constraintStart_toStartOf="@+id/delayTimerReading"
+        app:layout_constraintTop_toTopOf="@+id/remainingTimerLabel"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <EditText
+        android:id="@+id/stepTimerReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/timer_readings_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/stepTimerLabel"
+        app:layout_constraintEnd_toEndOf="@+id/remainingTimerReading"
+        app:layout_constraintStart_toStartOf="@+id/remainingTimerReading"
+        app:layout_constraintTop_toTopOf="@+id/stepTimerLabel"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <TextView
+        android:id="@+id/stepTimerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/step_time_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/remainingTimerLabel"
+        app:layout_constraintTop_toBottomOf="@+id/remainingTimerLabel" />
+
+    <TextView
+        android:id="@+id/remainingTimerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/remaining_test_time_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/delayTimerLabel"
+        app:layout_constraintTop_toBottomOf="@+id/delayTimerLabel" />
+
+    <TextView
+        android:id="@+id/delayTimerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/delay_time_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalTimerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/total_test_time"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/stepTimerLabel"
+        app:layout_constraintTop_toBottomOf="@+id/stepTimerLabel" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5007587" />
+</androidx.constraintlayout.widget.ConstraintLayout>

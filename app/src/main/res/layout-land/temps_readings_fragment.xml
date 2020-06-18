@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/topTemperatureReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/temps_reading_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/topTemperatureLabel"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/topTemperatureLabel"
+        app:layout_constraintTop_toTopOf="@+id/topTemperatureLabel" />
+
+    <EditText
+        android:id="@+id/bottomTemperatureReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/temps_reading_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomTemperatureLabel"
+        app:layout_constraintEnd_toEndOf="@+id/middleTemperatureReading"
+        app:layout_constraintStart_toStartOf="@+id/middleTemperatureReading"
+        app:layout_constraintTop_toTopOf="@+id/bottomTemperatureLabel" />
+
+    <EditText
+        android:id="@+id/middleTemperatureReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/temps_reading_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/middleTemperatureLabel"
+        app:layout_constraintEnd_toEndOf="@+id/topTemperatureReading"
+        app:layout_constraintStart_toStartOf="@+id/topTemperatureReading"
+        app:layout_constraintTop_toTopOf="@+id/middleTemperatureLabel" />
+
+    <TextView
+        android:id="@+id/bottomTemperatureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/bot_temp_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/middleTemperatureLabel"
+        app:layout_constraintTop_toBottomOf="@+id/middleTemperatureLabel" />
+
+    <TextView
+        android:id="@+id/topTemperatureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/top_temp_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/middleTemperatureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/mid_temp_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/topTemperatureLabel"
+        app:layout_constraintTop_toBottomOf="@+id/topTemperatureLabel" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="342dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/topSpoolEditButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/edit_top_spool_button"
+        app:layout_constraintBottom_toBottomOf="@+id/midSpoolEditButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/midSpoolEditButton" />
+
+    <Button
+        android:id="@+id/midSpoolEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/edit_mid_spool_button"
+        app:layout_constraintEnd_toStartOf="@+id/botSpoolEditButton"
+        app:layout_constraintStart_toEndOf="@+id/topSpoolEditButton"
+        app:layout_constraintTop_toBottomOf="@+id/botSpoolSwitch" />
+
+    <Button
+        android:id="@+id/botSpoolEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/edit_bot_spool_button"
+        app:layout_constraintBottom_toBottomOf="@+id/midSpoolEditButton"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/midSpoolEditButton" />
+
+    <Switch
+        android:id="@+id/topSpoolSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/top_switch_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/midSpoolSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/mid_switch_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/topSpoolSwitch"
+        app:layout_constraintStart_toStartOf="@+id/topSpoolSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/topSpoolSwitch" />
+
+    <Switch
+        android:id="@+id/botSpoolSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/bot_switch_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/topSpoolSwitch"
+        app:layout_constraintStart_toStartOf="@+id/topSpoolSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/midSpoolSwitch" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="342dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

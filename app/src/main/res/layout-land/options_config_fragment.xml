@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/systemSetupButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/system_setup_button"
+        app:layout_constraintEnd_toEndOf="@+id/editAllSpoolsButton"
+        app:layout_constraintStart_toStartOf="@+id/editAllSpoolsButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/testProfileButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/test_profile_button"
+        app:layout_constraintEnd_toEndOf="@+id/editAllSpoolsButton"
+        app:layout_constraintStart_toStartOf="@+id/editAllSpoolsButton"
+        app:layout_constraintTop_toBottomOf="@+id/systemSetupButton" />
+
+    <Button
+        android:id="@+id/editAllSpoolsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/edit_all_spools_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testProfileButton" />
+
+    <Button
+        android:id="@+id/stepLoadProfileButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/step_load_button"
+        app:layout_constraintEnd_toEndOf="@+id/editAllSpoolsButton"
+        app:layout_constraintStart_toStartOf="@+id/editAllSpoolsButton"
+        app:layout_constraintTop_toBottomOf="@+id/editAllSpoolsButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

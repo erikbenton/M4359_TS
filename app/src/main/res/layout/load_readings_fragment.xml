@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/tareTrackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tare_button"
+        app:layout_constraintBottom_toBottomOf="@+id/trackLoadReading"
+        app:layout_constraintStart_toStartOf="@+id/tarePeakButton"
+        app:layout_constraintTop_toTopOf="@+id/trackLoadReading" />
+
+    <Button
+        android:id="@+id/tarePeakButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tare_button"
+        app:layout_constraintBottom_toBottomOf="@+id/peakLoadReading"
+        app:layout_constraintEnd_toEndOf="@+id/tareValleyButton"
+        app:layout_constraintStart_toStartOf="@+id/tareValleyButton"
+        app:layout_constraintTop_toTopOf="@+id/peakLoadReading" />
+
+    <Button
+        android:id="@+id/tareValleyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/tare_button"
+        app:layout_constraintBottom_toBottomOf="@+id/valleyLoadReading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/valleyLoadReading" />
+
+    <EditText
+        android:id="@+id/trackLoadReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/load_reading_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/trackLoadLabel"
+        app:layout_constraintEnd_toEndOf="@+id/peakLoadReading"
+        app:layout_constraintStart_toStartOf="@+id/peakLoadReading"
+        app:layout_constraintTop_toTopOf="@+id/trackLoadLabel" />
+
+    <EditText
+        android:id="@+id/valleyLoadReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/load_reading_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/valleyLoadLabel"
+        app:layout_constraintEnd_toStartOf="@+id/tareValleyButton"
+        app:layout_constraintStart_toEndOf="@+id/valleyLoadLabel"
+        app:layout_constraintTop_toTopOf="@+id/valleyLoadLabel" />
+
+    <EditText
+        android:id="@+id/peakLoadReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="right"
+        android:hint="@string/load_reading_hint"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/peakLoadLabel"
+        app:layout_constraintEnd_toEndOf="@+id/valleyLoadReading"
+        app:layout_constraintStart_toStartOf="@+id/valleyLoadReading"
+        app:layout_constraintTop_toTopOf="@+id/peakLoadLabel" />
+
+    <TextView
+        android:id="@+id/valleyLoadLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/valley_load_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/peakLoadLabel"
+        app:layout_constraintTop_toBottomOf="@+id/peakLoadLabel" />
+
+    <TextView
+        android:id="@+id/trackLoadLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/track_load_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/peakLoadLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/peak_load_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/trackLoadLabel"
+        app:layout_constraintTop_toBottomOf="@+id/trackLoadLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

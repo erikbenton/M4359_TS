@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/frameStatusField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/frame_status_hint"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameStatusLabel"
+        app:layout_constraintEnd_toEndOf="@+id/adminSwitch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firmwareVersionField"
+        app:layout_constraintTop_toTopOf="@+id/frameStatusLabel"
+        app:layout_constraintVertical_bias="0.428"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/firmwareVersionField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/firmware_version_hint"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/firmwareVersionLabel"
+        app:layout_constraintEnd_toEndOf="@+id/adminSwitch"
+        app:layout_constraintStart_toEndOf="@+id/firmwareVersionLabel"
+        app:layout_constraintTop_toTopOf="@+id/firmwareVersionLabel" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="279dp" />
+
+    <Switch
+        android:id="@+id/connectedSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/connected_switch_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/communicationsLed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:layoutDirection="rtl"
+        android:text="@string/communications_led_label"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/connectedSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/connectedSwitch" />
+
+    <RadioButton
+        android:id="@+id/testRunningLed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layoutDirection="rtl"
+        android:text="@string/test_running_led_label"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/communicationsLed"
+        app:layout_constraintEnd_toEndOf="@+id/adminSwitch"
+        app:layout_constraintTop_toTopOf="@+id/communicationsLed" />
+
+    <TextView
+        android:id="@+id/frameIdConfigLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/frame_id_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/connectedSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/communicationsLed" />
+
+    <Switch
+        android:id="@+id/adminSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/admin_switch_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/connectedSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/connectedSwitch" />
+
+    <TextView
+        android:id="@+id/firmwareVersionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/firmware_version_label"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameStatusLabel" />
+
+    <EditText
+        android:id="@+id/frameIdField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/frame_id_hint"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameIdConfigLabel"
+        app:layout_constraintEnd_toEndOf="@+id/adminSwitch"
+        app:layout_constraintStart_toStartOf="@+id/firmwareVersionField"
+        app:layout_constraintTop_toTopOf="@+id/frameIdConfigLabel"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/frameStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/frame_status_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/connectedSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/frameIdConfigLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
