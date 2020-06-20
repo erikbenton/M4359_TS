@@ -56,25 +56,25 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/ExtReadingsTab"
+            android:id="@+id/FrameSettingsTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ext_readings_title" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/TempReadingsTab"
+            android:id="@+id/TempSettingsTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/temp_readings_title" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/LoadReadingsTab"
+            android:id="@+id/LoadSettingsTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/load_readings_title" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/TimerReadingsTab"
+            android:id="@+id/FiltersSettingsTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/timer_readings_title" />

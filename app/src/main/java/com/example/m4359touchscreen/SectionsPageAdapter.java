@@ -52,4 +52,9 @@ public class SectionsPageAdapter extends FragmentPagerAdapter {
             viewPager.setAdapter(adapter);
         }
     }
+
+    public static void setupViewPager(@NonNull FragmentManager fm, ViewPager viewPager, List<Fragment> fragments, List<String> titles) {
+        SectionsPageAdapter adapter = new SectionsPageAdapter(fm, fragments, titles);
+        viewPager.setAdapter(adapter);
+    }
 }

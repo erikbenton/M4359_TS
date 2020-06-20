@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="50dp" />
+
+    <TextView
+        android:id="@+id/frameIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/frame_id_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frameModelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/frame_model_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/frameIdLabel"
+        app:layout_constraintTop_toBottomOf="@+id/frameIdLabel" />
+
+    <TextView
+        android:id="@+id/frameSerialLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/frame_serial_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/frameIdLabel"
+        app:layout_constraintTop_toBottomOf="@+id/frameModelLabel" />
+
+    <TextView
+        android:id="@+id/frameLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/frame_location_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/frameSerialLabel"
+        app:layout_constraintTop_toBottomOf="@+id/frameSerialLabel" />
+
+    <EditText
+        android:id="@+id/frameIdEntry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameIdLabel"
+        app:layout_constraintEnd_toEndOf="@+id/frameLocationEntry"
+        app:layout_constraintStart_toStartOf="@+id/frameModelEntry"
+        app:layout_constraintTop_toTopOf="@+id/frameIdLabel" />
+
+    <EditText
+        android:id="@+id/frameModelEntry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameModelLabel"
+        app:layout_constraintEnd_toEndOf="@+id/frameLocationEntry"
+        app:layout_constraintStart_toStartOf="@+id/frameSerialEntry"
+        app:layout_constraintTop_toTopOf="@+id/frameModelLabel" />
+
+    <EditText
+        android:id="@+id/frameSerialEntry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameSerialLabel"
+        app:layout_constraintEnd_toEndOf="@+id/frameLocationEntry"
+        app:layout_constraintStart_toStartOf="@+id/frameLocationEntry"
+        app:layout_constraintTop_toTopOf="@+id/frameSerialLabel" />
+
+    <EditText
+        android:id="@+id/frameLocationEntry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLocationLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLocationLabel"
+        app:layout_constraintTop_toTopOf="@+id/frameLocationLabel"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <Button
+        android:id="@+id/frameSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLocationEntry" />
+</androidx.constraintlayout.widget.ConstraintLayout>

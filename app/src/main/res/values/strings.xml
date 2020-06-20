@@ -9,7 +9,7 @@
     <string name="controls_config_title">Control</string>
     <string name="connect_config_title">Connect</string>
     <string name="left_extens_label">Left</string>
-    <string name="right_extens_label" >Right</string>
+    <string name="right_extens_label">Right</string>
     <string name="percent_strain_label">Strain</string>
     <string name="tare_button">Tare</string>
     <string name="extens_reading_hint">Extens Reading</string>
@@ -52,7 +52,6 @@
     <string name="test_profile_button">Test Profile</string>
     <string name="edit_all_spools_button">Thermocouple Spools</string>
     <string name="system_setup_button">System/Sensor Setup</string>
-
     <string name="jog_up_button"> Jog Up</string>
     <string name="jog_down_button">Jog Down</string>
     <string name="furnace_on_button">Turn Furnace On</string>
@@ -60,4 +59,13 @@
     <string name="start_test_button">Start</string>
     <string name="pause_test_button">Pause</string>
     <string name="stop_test_button">Stop</string>
+    <string name="frame_settings_title">Frame</string>
+    <string name="extensometers_settings_tab">Extens</string>
+    <string name="temp_settings_title">Temps</string>
+    <string name="load_settings_title">Load</string>
+    <string name="filters_settings_tab">Filters</string>
+    <string name="frame_model_label">Model #</string>
+    <string name="frame_serial_label">Serial #</string>
+    <string name="frame_location_label">Location</string>
+    <string name="save_button">Save</string>
 </resources>
