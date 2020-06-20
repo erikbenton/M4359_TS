@@ -7,16 +7,16 @@
     tools:context=".SystemSetupActivity">
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/ReadingsViewPager"
+        android:id="@+id/SystemSettingsViewPager"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ReadingsTabLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/SystemSettingsTabLayout" />
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/ReadingsTabLayout"
+        android:id="@+id/SystemSettingsTabLayout"
         android:layout_width="0dp"
         android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
