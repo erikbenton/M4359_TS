@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="50dp" />
+
+    <Button
+        android:id="@+id/jogUpButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/jog_up_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/jogDownButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/jog_down_button"
+        app:layout_constraintBottom_toBottomOf="@+id/jogUpButton"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/jogUpButton" />
+
+    <EditText
+        android:id="@+id/jogMotorSpeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/jogUpButton"
+        app:layout_constraintEnd_toStartOf="@+id/jogDownButton"
+        app:layout_constraintStart_toEndOf="@+id/jogUpButton"
+        app:layout_constraintTop_toTopOf="@+id/jogUpButton" />
+
+    <Button
+        android:id="@+id/startFurnaceButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/furnace_on_button"
+        app:layout_constraintStart_toStartOf="@+id/jogUpButton"
+        app:layout_constraintTop_toBottomOf="@+id/jogUpButton" />
+
+    <Button
+        android:id="@+id/stopFurnaceButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/furnace_off_button"
+        app:layout_constraintBottom_toBottomOf="@+id/startFurnaceButton"
+        app:layout_constraintEnd_toEndOf="@+id/jogDownButton"
+        app:layout_constraintTop_toTopOf="@+id/startFurnaceButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/startTestButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/start_test_button"
+        app:layout_constraintEnd_toEndOf="@+id/stopFurnaceButton"
+        app:layout_constraintStart_toStartOf="@+id/startFurnaceButton"
+        app:layout_constraintTop_toBottomOf="@+id/startFurnaceButton" />
+
+    <Button
+        android:id="@+id/pauseTestButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/pause_test_button"
+        app:layout_constraintEnd_toEndOf="@+id/startTestButton"
+        app:layout_constraintStart_toStartOf="@+id/startTestButton"
+        app:layout_constraintTop_toBottomOf="@+id/startTestButton" />
+
+    <Button
+        android:id="@+id/stopTestButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/stop_test_button"
+        app:layout_constraintEnd_toEndOf="@+id/startTestButton"
+        app:layout_constraintStart_toStartOf="@+id/startTestButton"
+        app:layout_constraintTop_toBottomOf="@+id/pauseTestButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="342dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

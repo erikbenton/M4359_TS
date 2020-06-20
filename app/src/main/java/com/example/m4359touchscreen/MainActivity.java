@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         configFragments.add(new StatusConfigFragment());
         configFragments.add(new ParametersConfigFragment());
         configFragments.add(new OptionsConfigFragment());
-        configFragments.add(new TimerReadingsFragment());//new StatusConfigFragment());
+        configFragments.add(new ControlsConfigFragment());
 
         configTitles.add("Status");
         configTitles.add("Params");
@@ -63,21 +63,10 @@ public class MainActivity extends AppCompatActivity {
         List<List<String>> listOfTitlesLists = new ArrayList<>(Arrays.asList(readingsTitles, configTitles));
         List<ViewPager> listOfViewPagers = new ArrayList<>(Arrays.asList(mReadingsViewPager, mConfigViewPager));
 
-        setupViewPager(listOfViewPagers, listOfFragmentsLists, listOfTitlesLists);
+        SectionsPageAdapter.setupViewPager(getSupportFragmentManager(), listOfViewPagers, listOfFragmentsLists, listOfTitlesLists);
 
         mReadingsTabs.setupWithViewPager(mReadingsViewPager);
         mConfigTabs.setupWithViewPager(mConfigViewPager);
 
-    }
-
-    private void setupViewPager(List<ViewPager> viewPagers, List<List<Fragment>> listOfFragmentLists, List<List<String>> listOfTitleLists) {
-        for(int i = 0; i < viewPagers.size(); i++) {
-            ViewPager viewPager = viewPagers.get(i);
-            List<Fragment> fragments = listOfFragmentLists.get(i);
-            List<String> titles = listOfTitleLists.get(i);
-
-            SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager(), fragments, titles);
-            viewPager.setAdapter(adapter);
-        }
     }
 }

@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 public class SectionsPageAdapter extends FragmentPagerAdapter {
 
@@ -39,5 +40,16 @@ public class SectionsPageAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return mFragmentList.size();
+    }
+
+    public static void setupViewPager(@NonNull FragmentManager fm, List<ViewPager> viewPagers, List<List<Fragment>> listOfFragmentLists, List<List<String>> listOfTitleLists) {
+        for(int i = 0; i < viewPagers.size(); i++) {
+            ViewPager viewPager = viewPagers.get(i);
+            List<Fragment> fragments = listOfFragmentLists.get(i);
+            List<String> titles = listOfTitleLists.get(i);
+
+            SectionsPageAdapter adapter = new SectionsPageAdapter(fm, fragments, titles);
+            viewPager.setAdapter(adapter);
+        }
     }
 }

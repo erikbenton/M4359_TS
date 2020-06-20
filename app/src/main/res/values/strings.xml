@@ -52,4 +52,12 @@
     <string name="test_profile_button">Test Profile</string>
     <string name="edit_all_spools_button">Thermocouple Spools</string>
     <string name="system_setup_button">System/Sensor Setup</string>
+
+    <string name="jog_up_button"> Jog Up</string>
+    <string name="jog_down_button">Jog Down</string>
+    <string name="furnace_on_button">Turn Furnace On</string>
+    <string name="furnace_off_button">Turn Furnace Off</string>
+    <string name="start_test_button">Start</string>
+    <string name="pause_test_button">Pause</string>
+    <string name="stop_test_button">Stop</string>
 </resources>
