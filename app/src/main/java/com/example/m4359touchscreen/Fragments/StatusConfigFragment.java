@@ -1,4 +1,4 @@
-package com.example.m4359touchscreen;
+package com.example.m4359touchscreen.Fragments;
 
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -13,6 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.m4359touchscreen.R;
 
 public class StatusConfigFragment extends Fragment {
     private static final String TAG = "StatusConfigFragment";

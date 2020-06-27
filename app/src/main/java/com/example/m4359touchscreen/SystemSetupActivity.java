@@ -5,12 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
-import android.widget.TableLayout;
 
+import com.example.m4359touchscreen.Fragments.FrameSettingsFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class SystemSetupActivity extends AppCompatActivity {

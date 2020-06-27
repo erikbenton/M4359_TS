@@ -4,11 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
+import com.example.m4359touchscreen.Fragments.ControlsConfigFragment;
+import com.example.m4359touchscreen.Fragments.ExtensometerReadingsFragment;
+import com.example.m4359touchscreen.Fragments.LoadReadingsFragment;
+import com.example.m4359touchscreen.Fragments.OptionsConfigFragment;
+import com.example.m4359touchscreen.Fragments.ParametersConfigFragment;
+import com.example.m4359touchscreen.Fragments.StatusConfigFragment;
+import com.example.m4359touchscreen.Fragments.TemperatureReadingFragment;
+import com.example.m4359touchscreen.Fragments.TimerReadingsFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
