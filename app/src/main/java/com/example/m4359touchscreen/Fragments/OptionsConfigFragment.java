@@ -6,14 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Switch;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.m4359touchscreen.R;
-import com.example.m4359touchscreen.SystemSetupActivity;
+import com.example.m4359touchscreen.Activities.SystemSetupActivity;
 
 public class OptionsConfigFragment extends Fragment {
     private static final String TAG = "OptionsConfigFragment";

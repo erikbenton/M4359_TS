@@ -1,4 +1,4 @@
-package com.example.m4359touchscreen;
+package com.example.m4359touchscreen.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -14,6 +14,8 @@ import com.example.m4359touchscreen.Fragments.ParametersConfigFragment;
 import com.example.m4359touchscreen.Fragments.StatusConfigFragment;
 import com.example.m4359touchscreen.Fragments.TemperatureReadingFragment;
 import com.example.m4359touchscreen.Fragments.TimerReadingsFragment;
+import com.example.m4359touchscreen.R;
+import com.example.m4359touchscreen.Helpers.SectionsPageAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
