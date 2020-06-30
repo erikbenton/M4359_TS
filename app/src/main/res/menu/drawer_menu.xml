@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_control"
+            android:icon="@drawable/icon_control"
+            android:title="@string/nav_control_label" />
+        <item
+            android:id="@+id/nav_sensor_setup"
+            android:icon="@drawable/icon_sensor_setup"
+            android:title="@string/nav_sensor_settings_label" />
+        <item
+            android:id="@+id/nav_sensor_calibration"
+            android:icon="@drawable/icon_sensor_calibration"
+            android:title="@string/nav_sensor_calibration_label" />
+        <item
+            android:id="@+id/nav_test_settings"
+            android:icon="@drawable/icon_test_settings"
+            android:title="@string/nav_test_settings_label" />
+        <item
+            android:id="@+id/nav_graphing"
+            android:icon="@drawable/icon_graphing"
+            android:title="@string/nav_graphing_label" />
+    </group>
+
+</menu>

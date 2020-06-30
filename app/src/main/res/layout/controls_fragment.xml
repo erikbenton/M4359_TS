@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:id="@+id/topSpoolSwitch2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/top_switch_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/botSpoolSwitch2"
+        app:layout_constraintStart_toStartOf="@+id/botSpoolSwitch2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/topSpoolEditButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/topSpoolSwitch2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topSpoolSwitch2" />
+
+    <Switch
+        android:id="@+id/midSpoolSwitch2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/mid_switch_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/botSpoolSwitch2"
+        app:layout_constraintStart_toStartOf="@+id/botSpoolSwitch2"
+        app:layout_constraintTop_toBottomOf="@+id/topSpoolSwitch2" />
+
+    <Button
+        android:id="@+id/midSpoolEditButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/midSpoolSwitch2"
+        app:layout_constraintEnd_toEndOf="@+id/topSpoolEditButton2"
+        app:layout_constraintTop_toTopOf="@+id/midSpoolSwitch2" />
+
+    <Switch
+        android:id="@+id/botSpoolSwitch2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/bot_switch_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midSpoolSwitch2" />
+
+    <Button
+        android:id="@+id/botSpoolEditButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/botSpoolSwitch2"
+        app:layout_constraintEnd_toEndOf="@+id/topSpoolEditButton2"
+        app:layout_constraintTop_toTopOf="@+id/botSpoolSwitch2" />
+
+    <Button
+        android:id="@+id/jogUpButton2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/on_green"
+        android:text="@string/jog_up_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <EditText
+        android:id="@+id/jogMotorSpeed2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/jogUpButton2"
+        app:layout_constraintEnd_toStartOf="@+id/jogDownButton2"
+        app:layout_constraintStart_toEndOf="@+id/jogUpButton2"
+        app:layout_constraintTop_toTopOf="@+id/jogUpButton2" />
+
+    <Button
+        android:id="@+id/jogDownButton2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@color/off_red"
+        android:text="@string/jog_down_button"
+        app:layout_constraintBottom_toBottomOf="@+id/jogUpButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/jogUpButton2" />
+
+    <Button
+        android:id="@+id/startFurnaceButton2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/on_green"
+        android:text="@string/furnace_on_button"
+        app:layout_constraintStart_toStartOf="@+id/jogUpButton2"
+        app:layout_constraintTop_toBottomOf="@+id/jogUpButton2" />
+
+    <Button
+        android:id="@+id/stopFurnaceButton2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@color/off_red"
+        android:text="@string/furnace_off_button"
+        app:layout_constraintBottom_toBottomOf="@+id/startFurnaceButton2"
+        app:layout_constraintEnd_toEndOf="@+id/jogDownButton2"
+        app:layout_constraintTop_toTopOf="@+id/startFurnaceButton2" />
+
+    <Button
+        android:id="@+id/startTestButton2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/on_green"
+        android:text="@string/start_test_button"
+        app:layout_constraintStart_toStartOf="@+id/jogUpButton2"
+        app:layout_constraintTop_toBottomOf="@+id/startFurnaceButton2" />
+
+    <Button
+        android:id="@+id/pauseTestButton2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@color/pause_yellow"
+        android:text="@string/pause_test_button"
+        app:layout_constraintBottom_toBottomOf="@+id/startTestButton2"
+        app:layout_constraintEnd_toStartOf="@+id/stopTestButton2"
+        app:layout_constraintStart_toEndOf="@+id/startTestButton2"
+        app:layout_constraintTop_toTopOf="@+id/startTestButton2" />
+
+    <Button
+        android:id="@+id/stopTestButton2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@color/off_red"
+        android:text="@string/stop_test_button"
+        app:layout_constraintBottom_toBottomOf="@+id/pauseTestButton2"
+        app:layout_constraintEnd_toEndOf="@+id/stopFurnaceButton2"
+        app:layout_constraintTop_toTopOf="@+id/pauseTestButton2" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/text_control_load_track"
+        app:layout_constraintStart_toStartOf="@+id/text_control_load_track"
+        app:layout_constraintTop_toBottomOf="@+id/text_control_load_track" />
+
+    <TextView
+        android:id="@+id/text_control_load_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/track_load_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/spools_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_control_load_track"
+        app:layout_constraintStart_toStartOf="@+id/text_control_load_track"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5787728" />
+</androidx.constraintlayout.widget.ConstraintLayout>

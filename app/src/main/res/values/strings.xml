@@ -42,8 +42,8 @@
     <string name="frame_status_label">Status</string>
     <string name="frame_status_hint">Disconnected</string>
     <string name="top_switch_label">Top Zone Spool</string>
-    <string name="mid_switch_label">Mid Zone Spool</string>
-    <string name="bot_switch_label">Bot Zone Spool</string>
+    <string name="mid_switch_label">Middle Zone Spool</string>
+    <string name="bot_switch_label">Bottom Zone Spool</string>
     <string name="edit_text">Edit</string>
     <string name="edit_top_spool_button">Edit Top</string>
     <string name="edit_mid_spool_button">Edit Mid</string>
@@ -56,9 +56,9 @@
     <string name="jog_down_button">Jog Down</string>
     <string name="furnace_on_button">Turn Furnace On</string>
     <string name="furnace_off_button">Turn Furnace Off</string>
-    <string name="start_test_button">Start</string>
-    <string name="pause_test_button">Pause</string>
-    <string name="stop_test_button">Stop</string>
+    <string name="start_test_button">Start Test</string>
+    <string name="pause_test_button">Pause Test</string>
+    <string name="stop_test_button">Stop Test</string>
     <string name="frame_settings_title">Frame</string>
     <string name="extensometers_settings_tab">Extens</string>
     <string name="temp_settings_title">Temps</string>
@@ -68,4 +68,12 @@
     <string name="frame_serial_label">Serial #</string>
     <string name="frame_location_label">Location</string>
     <string name="save_button">Save</string>
+    <string name="nav_control_label">Control</string>
+    <string name="nav_sensor_settings_label">Sensor Settings</string>
+    <string name="nav_sensor_calibration_label">Sensor Calibration</string>
+    <string name="nav_test_settings_label">Test Settings</string>
+    <string name="nav_graphing_label">Graphing</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="spools_label">Thermocouple Spools</string>
 </resources>

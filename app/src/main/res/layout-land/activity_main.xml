@@ -1,101 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.MainActivity">
+    android:id="@+id/layout_drawer"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.MainActivity"
+    tools:openDrawer="start">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.50073206" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"/>
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/ConfigTabLayout"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/ConnectConfigTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/connect_config_title" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/ParametersConfigTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/parameters_config_title" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/OptionsConfigTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/options_config_title" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/ControlsConfigTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/controls_config_title" />
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/ReadingsTabLayout"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/FrameSettingsTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ext_readings_title" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/TempSettingsTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/temp_readings_title" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/LoadSettingsTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/load_readings_title" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/FiltersSettingsTab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/timer_readings_title" />
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/ReadingsViewPager"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ConfigTabLayout" />
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/ConfigViewPager"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ReadingsViewPager"
-        app:layout_constraintTop_toBottomOf="@+id/ConfigTabLayout" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
